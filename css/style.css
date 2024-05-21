@@ -1,0 +1,487 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    background: #000;
+}
+
+.divcontainer{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.videobkgrd{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.labelformusuariosnobgdate { 
+    position: relative;
+    top: 23px;
+    left: 13px;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: fit-content;
+    z-index: 5;
+    padding: 0 8px 0px 5px;
+    cursor: text;
+    margin: 0;
+}
+
+a {
+    color: yellow;
+}
+
+footer {
+    position: fixed;
+    border-width: 0px;
+    border-bottom-style:groove;
+    left: 0;
+    bottom: -9px;
+    width: 100%;
+    background-color:#6767677a;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px #e6bebe;
+    font-size: calc(0.5em + 0.5vw) ;  
+    z-index: 1058;
+    padding: 10px;
+}
+
+.footer-link {
+    color: #e66262 !important;
+}
+
+.closespan{   
+    color: white;
+    font-size: 30px; 
+}
+
+.logoslabs{
+    width: 90px;
+    height: 29px;
+}
+
+.footer-text__source{
+    margin: 10px;
+}
+
+.footer-text{
+    text-shadow: 0px 0px #020202;
+}
+
+a:focus, a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.inputboxatualuser{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.inputboxatualusercamp{
+    display: flex;
+    margin: 0rem 0rem -2rem 0px;
+    flex-direction: column;
+}
+
+.labelformusuariosnobg {
+    position: relative;
+    top: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: fit-content;
+    z-index: 5;
+    padding: 0 8px 0px 5px;
+    cursor: text;
+    margin: 0;
+    left: 10px;
+}
+
+.campo-formnm {
+    display: inline-block;
+    height: 40px;
+    width: 200px;
+    padding: 8px 6px 4px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: black;
+    background-color: transparent !important;
+    background-image: none;
+    border: 1px solid #8585856b;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    padding-left: 30px;
+}
+
+.campo-formnm2 {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    text-align-last: center;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: black;
+    background-color: transparent !important;
+    background-image: none;
+    border: 1px solid #8585856b;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-icon {
+    position: relative;
+    top: 35px;
+    transform: translateY(-50%);
+    left: 7px;
+    pointer-events: none;
+    color: var(--clr-switch-track);
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    color: #ffffff;
+    font-weight: 900;
+    z-index: 1;
+    margin-top: 125px;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.carreganome{
+    color: white;
+}
+
+.title {   
+    padding: 8px;
+    color: yellow;
+    text-align: -webkit-center;
+}
+
+.opacity0{
+    opacity: 0;
+}
+
+video {  
+    width: 100%;
+    height: auto;
+}
+
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+
+}
+
+.alert-frame {
+    background: #fff;
+    min-height: 320px;
+    width: 730px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    animation: open-frame 0.3s linear;
+    z-index: 999999;
+}
+
+.alert-close {
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    line-height: 30px;
+    transition: color 0.5s;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.alert-img {
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.alert-header {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.clock div {
+    position: relative;
+    background: #ffffffb0;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 215px;
+    font-size: 80px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 15px 5px rgb(0 0 0 / 56%);
+    border: 1px solid #f5f5f5;
+    color: #111;
+    font-family:'Orbitron', sans-serif;
+    overflow: hidden;
+}
+
+.clock .colon{
+    width: 25px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.divbuttoncalendar {
+    position: absolute;
+    z-index: 2;
+}
+
+.iconcalendar {
+    color: white;
+    position: absolute;
+    font-size: 32px;
+    margin: 9px;
+    display: flex;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+.btn{ 
+    width: 100px;
+    margin-bottom: 1px;
+    background-color: #ad4922;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 1px 2.5px 5px #000000;
+}
+
+.confirmDate{    
+    background-color: #ad4922;  
+}
+
+.save{    
+    background-color: #29931c;  
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);    
+}
+
+.modal-body {
+    display: grid;
+    gap: 10px;
+    align-items: stretch;
+    height: 200px;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+}
+
+.btn:hover, .btn:active, .btn:focus{ 
+    border: none;
+    box-shadow: none;
+}
+
+.modal-header .close {
+    margin-top: 0px !important;
+    margin-right: 10px !important;
+}
+
+.modal-header {
+    position: relative;
+    text-align: center;
+    background-color: #653818;
+    color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 0;
+}
+
+.close{
+    opacity: 1 !important;
+}
+
+th {
+    color: #FFFFFF !important;
+    background-color: #232a89;
+    border-color: #233b89;
+}
+
+.inputboxatualuserdate {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    border-radius: 10px;
+    border: 1px solid #888;
+    max-width: 500px;
+    width: 450px;
+    height: 300px;   
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.divcampclock {
+    display: flex;
+    gap: 5px;
+    margin-top: -9px;
+}
+
+.clock div:before{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+    line-height: 21px;
+    font-size: 14px;
+    z-index: 1;
+    color: #000;
+    letter-spacing: 1px;
+    background: #fff;
+}
+.clock div.days:before{
+    content: "Dias";
+}
+
+.clock div.hours:before{
+    content: "Horas";
+}
+
+.clock div.minutes:before{
+    content: "Minutos";
+}
+
+.clock div.seconds:before{
+    content: "Segundos";
+}
+
+.clock div div{
+    width: 200px;
+    height: 200px;   
+    transition: all 800ms ease-in-out;
+}
+
+.clock div.animate{
+    animation: bounce 800ms ease-in-out;
+}
+
+@keyframes bounce{
+    0%, 100%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: -20px;
+    }
+}
+
+.dadoscontagem {
+    display: contents;
+}
+
+.sucesso{
+    display: none;
+}
+
+.alert{
+    animation: alert 1s linear infinite alternate;
+}
+
+@keyframes alert{
+    0%{
+        background: #112;
+    }
+    100%{
+        background: #a11;
+    }
+}
+
+.tv-effect {
+    width: 100%;
+    height: 100%;
+    background: url('https://via.placeholder.com/800') no-repeat center center;
+    background-size: cover;
+    animation: tv-off 4s forwards;
+}
+
+@keyframes tv-off {
+    0% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1, 0.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1, 0);
+        opacity: 0;
+        background: #000;
+    }
+}
